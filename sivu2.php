@@ -2,8 +2,6 @@
 <body>
 <?php
 
-//$mysqli = new mysqli("localhost", "root", "", "tyoajat");
-
 $con = new mysqli("localhost","root","", "tyoajat");
 
 if (!$con)
@@ -17,7 +15,15 @@ $sql = ("INSERT INTO projekti (id, projekti_nimi, tyontekija, pvm, tunnit) VALUE
 $stmt = $con->prepare($sql);
 $stmt->execute();
 
-echo "1 record added";
+function redirect($url)
+{
+	header('Location: '.$url);
+	exit();
+}
+
+redirect('sivu.php'); //Palauttaa edellisen sivun takaisin
+
 ?>
+
 </body>
 </html>
