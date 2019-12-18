@@ -12,9 +12,14 @@
 <input type="submit" value="Lisää"/>
 </form>
 
-<p>Poista lisätty projekti: </p>
+<p>Poista projekti: </p>
 <form action="poista1.php">
 <input type="submit" value="Poista"/>
+</form>
+
+<p>Hae projektia: </p>
+<form action="hae1.php">
+<input type="submit" value="Hae"/>
 </form>
 
 <?php
