@@ -21,7 +21,7 @@ function redirect($url)
 	exit();
 }
 
-redirect('sivu.php'); //Palauttaa edellisen sivun takaisin
+redirect('aloitus.php'); //Palauttaa edellisen sivun takaisin
 
 ?>
 

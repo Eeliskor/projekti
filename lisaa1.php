@@ -1,4 +1,3 @@
-"#projekti" 
 <!DOCTYPE html>
 <html>
 <style>
@@ -22,7 +21,7 @@ echo "Hello World!";
 
 ?>
 
-<form action="sivu2.php" method="post">
+<form action="lisaa2.php" method="post">
 Anna projektin id: <input type="text" name="proid" /><br><br>
 Anna projektin nimi: <input type="text" name="pronimi" /><br><br>
 Anna työntekijän nimi: <input type="text" name="tyonimi" /><br><br>
