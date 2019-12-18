@@ -12,7 +12,7 @@ if (!$con)
     die('Could not connect: ' . mysql_error());
   }
 
-$sql = ("INSERT INTO projekti (projekti_nimi, tyontekija, pvm, tunnit) VALUES ('$_POST[pronimi]','$_POST[tyonimi]','$_POST[pvm]','$_POST[tunnit]')");
+$sql = ("INSERT INTO projekti (id, projekti_nimi, tyontekija, pvm, tunnit) VALUES ('$_POST[proid]','$_POST[pronimi]','$_POST[tyonimi]','$_POST[pvm]','$_POST[tunnit]')");
 
 $stmt = $con->prepare($sql);
 $stmt->execute();
