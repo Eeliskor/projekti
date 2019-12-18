@@ -13,7 +13,7 @@
 </form>
 
 <p>Poista lisätty projekti: </p>
-<form action="sivu3.php">
+<form action="poista1.php">
 <input type="submit" value="Poista"/>
 </form>
 

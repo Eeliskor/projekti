@@ -10,10 +10,14 @@ if (!$con)
     die('Could not connect: ' . mysql_error());
   }
 
-$sql = ("INSERT INTO projekti (id, projekti_nimi, tyontekija, pvm, tunnit) VALUES ('$_POST[proid]','$_POST[pronimi]','$_POST[tyonimi]','$_POST[pvm]','$_POST[tunnit]')");
-
-$stmt = $con->prepare($sql);
-$stmt->execute();
+if(isset($_POST["submit"]))
+    {
+        $iidee = $_POST["proid"];
+   
+        $sql = "DELETE FROM projekti WHERE id='$iidee'";
+        $stmt = $con->prepare($sql);
+        $stmt->execute();
+    }
 
 function redirect($url)
 {
