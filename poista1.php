@@ -18,7 +18,7 @@ ul {
 li a {
   display: block;
   color: #000;
-  padding: 8px 16px;
+  padding: 10px 20px;
   text-decoration: none;
   font-size: 20px;
   font-family: verdana;
@@ -41,15 +41,19 @@ h1 {
 }
 .button {
   background-color: #30a6cf;
-  border: none;
+  border: 1px solid black;
   color: white;
-  padding: 15px 32px;
+  padding: 10px 20px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  font-size: 15px;
   cursor: pointer;
+}
+.button:hover{
+    background-color: white;
+    border: 1px solid #30a6cf;
+    color: black;
 }
 
 </style>
@@ -75,11 +79,6 @@ $mysqli = new mysqli("localhost", "root", "", "tyoajat");
 <form action="poista2.php" method="post">
 Anna poistettavan projektin id: <input type="text" name="proid" /><br><br>
 <input type="submit" name="submit" value="Poista" class="button"/>
-</form>
-
-<br></br>
-<form action="aloitus.php">
-<input type="submit" value="Takaisin" class="button"/>
 </form>
 
 </div>

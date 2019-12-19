@@ -21,7 +21,7 @@ function redirect($url)
 	exit();
 }
 
-redirect('aloitus.php'); //Palauttaa takaisin aloitussivulle
+redirect('lisaa1.php'); //Palauttaa takaisin aloitussivulle
 
 ?>
 
