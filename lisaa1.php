@@ -34,15 +34,19 @@ li a:hover:not(.active) {
 form {
     font-family: verdana;
     font-size: 20px;
+    background-color: #54c9f2;
+    padding: 10px 10px;
 }
 h1{
     font-family: verdana;
     font-size: 35px;
+    background-color: #54c9f2;
+    padding: 10px 10px;
 }
 .button {
-  background-color: #30a6cf;
-  border: 1px solid black;
-  color: white;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -51,8 +55,8 @@ h1{
   cursor: pointer;
 }
 .button:hover{
-    background-color: white;
-    border: 1px solid #30a6cf;
+    background-color: #e2e2e3;
+    border: 2px solid black;
     color: black;
 }
 

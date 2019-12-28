@@ -34,10 +34,14 @@ li a:hover:not(.active) {
 p {
     font-family: verdana;
     font-size: 20px;
+    background-color: #54c9f2;
+    padding: 10px 10px;
 }
 h1{
     font-family: verdana;
     font-size: 35px;
+    background-color: #54c9f2;
+    padding: 10px 10px;
 }
 
 </style>
